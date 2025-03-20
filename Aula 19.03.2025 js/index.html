@@ -1,0 +1,53 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Aprenda JavaScript</h1>
+        
+        <!-- Seção da Calculadora -->
+        <section class="calculator">
+            <h2>Calculadora Simples</h2>
+            <input type="number" id="num1" placeholder="Primeiro número">
+            <input type="number" id="num2" placeholder="Segundo número">
+
+            <div class="buttons">
+                <button onclick="calculate('+')" class="operation">Somar</button>
+                <button onclick="calculate('-')" class="operation">Subtrair</button>
+                <button onclick="calculate('*')" class="operation">Multiplicar</button>
+                <button onclick="calculate('/')" class="operation">Dividir</button>
+            </div>
+            <p id="result"></p>
+        </section>
+
+        <!-- Seção de Manipulação de Texto -->
+        <section class="text-tools">
+            <h2>Manipulação de Texto</h2>
+            <input type="text" id="textinput" placeholder="Digite um texto">
+            <div class="buttons">
+                <button onclick="transformText('upper')">Maiúsculas</button>
+                <button onclick="transformText('lower')">Minúsculas</button>
+                <button onclick="countChars()">Contar Caracteres</button>
+            </div>
+            <p id="textResult">Resultado</p>
+        </section>
+
+        <!-- Seção de Mudança de Cor -->
+        <section class="color-changer">
+            <h2>Mudança de Cores</h2>
+            <div class="color-box" id="colorBox">
+                <p>Clique para mudar a cor!</p>
+            </div>
+        </section>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
